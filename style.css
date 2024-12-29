@@ -1,0 +1,312 @@
+/* Réinitialisation des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C8AD7F;
+    color: #000000;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #383636;
+    color: white;
+    padding: 1rem;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #383636;
+}  
+
+section {
+    background: #ba975b;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 50px 10px;
+    text-align: center;
+    border-radius: 8px;
+  }
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #383636;
+  transform: scale(1.05);
+}
+/* Animation d'effet de clic */
+.nav-lien {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.9s ease, color 0.3s ease;
+}
+
+.nav-lien:active {
+    transform: scale(0.9); 
+}
+
+.nav-lien::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #C8AD7F;
+    transition: width 0.5s ease;
+}
+
+.nav-lien:hover::after {
+    width: 100%; 
+}
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1, h2 {
+    color: #383636;
+}
+/* Section contenant l'image */
+.image-section {
+    text-align: center; /* Centre le contenu horizontalement */
+    padding: 30px 20px; /* Espace autour de l'image */
+    background-color: #ba975b; /* Couleur beige clair, semblable à celle du fond du site */
+    max-width: 800px; /* Limite la largeur de la section pour éviter qu'elle soit trop grande */
+    margin: 60px auto; /* Espace au-dessus et en dessous */
+    border-radius: 4; /* Coins arrondis */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Ombre douce pour un effet de profondeur */
+    border: 3px solid #EBD9B5; /* Bordure subtile, assortie au fond */
+}
+
+/* Style de l'image */
+.image-between {
+    width: 80%; /* L'image occupe 80% de la largeur du conteneur */
+    max-width: 300px; /* Largeur maximale pour éviter que l'image devienne trop grande */
+    height: auto; /* Maintient les proportions de l'image */
+    border-radius: 50px; /* Coins arrondis de l'image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Ombre douce autour de l'image */
+}
+
+
+footer {
+    background-color: #383636;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#accueil {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+#presentation {
+    background-color: #f9f9f9;
+    padding: 2rem;  
+}
+#cv {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.cv-contenu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.barre-latéral {
+    background-color: #B58969;
+    color: #fff;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+}
+
+.profile-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #fff;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contact, .social, .reference {
+    margin-bottom: 20px;
+}
+
+.contact h2, .social h2, .reference h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.contenu-principal {
+    padding: 30px;
+    width: 65%;
+    background-color: #EBD9B5; /* Plus clair pour le contraste */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #383636;
+    border-bottom: 2px solid #B58969;
+    display: inline-block;
+}
+
+.education {
+   line-height: 1.8;
+
+.annee {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+    width: 60px;
+    text-align: center;
+}
+
+.education h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #383636;
+}
+
+.languages {
+    text-align: center;
+}
+
+.languages p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+#centre-interet {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.centredint-contenu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.barre-latéral {
+    background-color: #B58969;
+    color: #fff;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contenu-principal {
+    padding: 30px;
+    width: 65%;
+    background-color: #EBD9B5; /* Plus clair pour le contraste */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #383636;
+    border-bottom: 2px solid #B58969;
+    display: inline-block;
+}
+
+.CMJ {
+   line-height: 1.8;
+
+.annee {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+    width: 60px;
+    text-align: center;
+}
+
+.CDM h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #383636;
+}
+
+.instance-politique {
+    text-align: center;
+}
+
+.intance-polique p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+}
+}
